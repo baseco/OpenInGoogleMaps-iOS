@@ -3,6 +3,7 @@ import PackageDescription
 
 let package = Package(
     name: "OpenInGoogleMaps",
+    defaultLocalization: "en",
     platforms: [
         .iOS(.v12)
     ],
@@ -16,6 +17,10 @@ let package = Package(
         .target(
             name: "OpenInGoogleMaps",
             path: ".",
+            exclude: [
+                "Docs",
+                "OpenInGoogleMapsSample"
+            ],
             sources: ["OpenInGoogleMapsController.m"],
             publicHeadersPath: ".",
             linkerSettings: [
