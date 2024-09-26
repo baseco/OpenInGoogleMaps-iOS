@@ -22,6 +22,7 @@
 
 #import <CoreLocation/CoreLocation.h>
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 /**
  *  Options for some of the views you can toggle in Google Maps.
