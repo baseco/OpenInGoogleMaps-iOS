@@ -22,7 +22,10 @@ let package = Package(
                 "OpenInGoogleMapsSample"
             ],
             sources: ["OpenInGoogleMapsController.m"],
-            publicHeadersPath: ".",
+            publicHeadersPath: "include",
+            cSettings: [
+                .headerSearchPath("include/OpenInGoogleMaps")
+            ],
             linkerSettings: [
                 .linkedFramework("CoreLocation")
             ]
