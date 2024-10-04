@@ -16,7 +16,7 @@ let package = Package(
     targets: [
         .target(
             name: "OpenInGoogleMaps",
-            path: ".",
+            path: "OpenInGoogleMaps",
             exclude: [
                 "Docs",
                 "OpenInGoogleMapsSample"
